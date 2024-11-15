@@ -1,134 +1,326 @@
 @charset "utf-8";
-/* CSS Document */
 
-/* font for h1 */
+/* font for GENSHIN IMPACT text */
 @font-face {
 	font-family: "a Asian Ninja";
 	src: url("aAsianNinja.ttf");
 }
 
-h1 {
-	text-align: center;
-	font-family: "a Asian Ninja", "custom font here";
-	src: url("aAsianNinja.ttf");
-}
 
-/* font for h2 */
-@font-face {
-	font-family: "Genshin Impact";
-	src: url("GenshinImpactFont-Regular.ttf");
-}
-
-h2 {
-	text-align: center;
-	font-family: "Genshin Impact", "custom font herrrra";
-	src: url("GenshinImpactFont-Regular.ttf");
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.start {
+html, body {
+margin: 0;
 	width: 100%;
 	height: 100vh;
-	background-image: url("ganyu_wide.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	padding: 0;
+	overflow-x: hidden;
+}
+/*
+.nav li {
+ display: inline-block;
+ font-size: 20px;
+ padding: 20px;
+}
+.nav li {
+ display: inline-block;
+ font-size: 20px;
+ padding: 20px;
+}
+*/
+a.first:link{
+color: #E21343;
+text-decoration: none;
+}
+a.first:hover{
+color:#6D0A0B;
+}
+a.second:link{
+text-decoration: none;
+color: #E43da;
+}
+a.second:hover{
+color:#6D0A0B;
+}
+/* page one*/
+
+
+.grid-obj {
+ background-color:#FFF;
+ text-align: center;
+ padding: 20% 0%;
+ font-size: 60px;
+ color: #3c3031;
+ font-family: "a Asian Ninja";
 }
 
-/* Styling for h1 */
-h1 {
-	text-align: center;
-	color: #3c3031;
-	font-size: 100px;
+.grid-wrapper {
+	display: grid;
 }
 
-/* Styling for h2 */
-h2 {
-	text-align: center;
-	color: #3c3031;
-	font-size: 40px;
-}
-
-/* Download section container */
-.download-section {
-	width: 100%;  
+.obj1 {
+ grid-column: 1 / span 4;
+ grid-row: 1;
+background-color: #fff;
+background-image: url("ganyu_wide.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
 	display: flex;
-	justify-content: center;
+	z-index: 2
 }
 
-.button-container {
-	text-align: center;
-}
-
-.download-button {
-	background-color: #3b3031;
-	color: #7a5858;
-	padding: 30px 100px; 
-	display: inline-block;
-	border-radius: 25px;
-	font-size: 30px;
-	font-family: "a Asian Ninja";
-	src: url("aAsianNinja.ttf");
-}
-
-
-.corner-image {
-	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	width: 70px;
-	z-index: 2;
-}
-
-
-.cloud-container {
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-	flex-wrap: wrap;
-	transform: translateY(200px);
-	z-index: 1;
-}
-
-.moln-image {
-	width: 35%;
-}
-
-.moln-image2 {
-	width: 40%;
-}
-
-/* Page 2 styles */
-.page2 {
+.obj2 {
+ grid-column: 1 / span 4;
+ grid-row: 2;
+background-color: #fff0d2;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 	width: 100%;
 	height: 100vh;
-	z-index: 1;
-	display: flex;
 }
-
-.paimon {
+.obj3 {
+ 
+ grid-row: 3;
+background-image: url("lanternrite_wide.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	flex-wrap: flex;
 }
 
-.pcolor {
-	background: #fff0d2;
-	z-index: 1;
+/* page one */
+.grid-wrapper-pageone {
+ display: grid;
+ grid-template-columns: auto auto auto 10%;
+ background-color: #2196F3;
 }
 
-.pagtext {
-	text-align: center;
+.grid-wrapper-pageone > div {
+ background-color: rgba(255, 255, 255, 0.8);
+ text-align: center;
+ padding: 20px 0;
+ font-size: 30px;
+	width: 100%;
+	height: 100vh;
 }
 
+.flex-wrapper-wrap > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+/* page one*/
+.flex-wrapper-wrap-reverse {
+ display: flex;
+ flex-wrap: wrap-reverse;
+ background-color: DodgerBlue;
+}
+.flex-wrapper-wrap-reverse > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-flex-flow{
+display: flex;
+ flex-flow: row wrap;
+ background-color: DodgerBlue;
+}
+.flex-wrapper-flex-flow > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+/* page two*/
+.flex-wrapper-justify{
+ display: flex;
+ justify-content: center;
+background-color: #0D1CAE;
+}
+.flex-wrapper-justify > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-justify-flex-start{
+ display: flex;
+ justify-content: flex-start;
+background-color: #0D1CAE;
+}
+.flex-wrapper-justify-flex-start > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-justify-flex-end{
+ display: flex;
+ justify-content: flex-end;
+background-color: #0D1CAE;
+}
+.flex-wrapper-justify-flex-end > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-justify-space-around{
+ display: flex;
+ justify-content: space-around;
+background-color: #0D1CAE;
+}
+.flex-wrapper-justify-space-around > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-justify-space-between{
+ display: flex;
+ justify-content: space-between;
+background-color: #0D1CAE;
+}
+.flex-wrapper-justify-space-between > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+/* page three*/
+.flex-wrapper-align{
+ display: flex;
+height: 200px;
+ align-items: center;
+ background-color: #0D1CAE;
+}
+.flex-wrapper-align > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-align-top{
+ display: flex;
+height: 200px;
+ align-items: flex-start;
+ background-color: #0D1CAE;
+}
+.flex-wrapper-align-top > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-align-bottom{
+ display: flex;
+height: 200px;
+ align-items: flex-end;
+ background-color: #0D1CAE;
+}
+.flex-wrapper-align-bottom > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-align-baseline{
+ display: flex;
+height: 200px;
+ align-items: baseline;
+ background-color: #0D1CAE;
+}
+.flex-wrapper-align-baseline > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+/*page four*/
+.flex-wrapper-space-between {
+ display: flex;
+ height: 600px;
+ flex-wrap: wrap;
+ align-content: space-between;
+background-color: #0D1CAE;
+}
+.flex-wrapper-space-between > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-stretch {
+ display: flex;
+ height: 600px;
+ flex-wrap: wrap;
+ align-content: stretch;
+background-color: #0D1CAE;
+}
+.flex-wrapper-stretch > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-align-contenet {
+ display: flex;
+ height: 600px;
+ flex-wrap: wrap;
+ align-content: center;
+background-color: #0D1CAE;
+}
+.flex-wrapper-align-content > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
+.flex-wrapper-perfect-center {
+ display: flex;
+ height: 300px;
+ justify-content: center;
+ align-items: center;
+background-color: #0D1CAE;
+}
+.flex-wrapper-perfect-center > div {
+ background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+}
