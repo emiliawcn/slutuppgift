@@ -73,7 +73,8 @@ background-color: #fff0d2;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-	width: 100%;
+	padding: 0;
+	display: flex;
 	height: 100vh;
 	align-items: flex-start;
 }
@@ -84,6 +85,7 @@ background-image: url("lanternrite_wide.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+	display: flex;
 	width: 100%;
 	height: 100vh;
 }
