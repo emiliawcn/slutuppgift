@@ -13,6 +13,21 @@ margin: 0;
 	height: 100vh;
 	padding: 0;
 	overflow-x: hidden;
+	background-repeat: no-repeat;
+}
+
+
+.warning-sign {
+position: fixed;
+background-image: url("warning.png");
+background-repeat: no-repeat;
+bottom: 20px;
+right: 50px;
+width: 120px;;
+height: 100px;
+background-size: contain;
+z-index: 3;	
+	
 }
 /*
 .nav li {
@@ -31,9 +46,10 @@ margin: 0;
 
 .grid-obj {
  padding: 0;
-	height: 100vh;
+	margin: 0;
+height: 100vh;
 display: flex;
- font-size: 60px;
+ font-size: 90px;
  color: #3c3031;
  font-family: "a Asian Ninja";
 	justify-content: center;
@@ -60,7 +76,7 @@ z-index: 2
 
 
 .title-text {
-	top: 10px;
+	top: 0px;
 }
 
 
@@ -77,6 +93,8 @@ background-position: center;
 	display: flex;
 	height: 100vh;
 	align-items: flex-start;
+	
+	
 }
 .obj3 {
  
