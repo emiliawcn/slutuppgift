@@ -31,19 +31,25 @@ z-index: 3;
 }
 
 
+.loud-container {
+	bottom: 0;
+}
+
+
 .cloud-container {
 	display: flex;
 	jutify-content: space-between;
+	position: fixed;
 	margin: 0;
 	padding: 0;
 	flex-wrap: wrap;
 	top: 0;
 	z-index: 2;
+	align-items: flex-end;
 }
 
 .Moln-Right {
-	width: 100%;
-
+	max-width: 100%;
 }
 
 .Moln-Left {
