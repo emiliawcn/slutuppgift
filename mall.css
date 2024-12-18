@@ -38,8 +38,9 @@ z-index: 8;
 
 .title-text {
 	display: flex;
- 	font-size: 90px;
+ 	font-size: 600%;
 	margin-left: 30%;
+	margin-top: 5%;
  	color: #3c3031;
  	font-family: "a Asian Ninja";
 	align-items: flex-start;
@@ -49,8 +50,8 @@ z-index: 8;
 	display: flex;
 	width: 200%;
 	height: 5%;
-	margin-top: 800%;
-	margin-left: -340%;
+	margin-top: 150%;
+	margin-left: -370%;
 	justify-content: center;
     font-size: 160%;
 	color: #3c3031;
@@ -114,11 +115,11 @@ margin: 0;
 	
 }
 .page2-text {
- 	font-size: 90px;
+ 	font-size: 500%;
  	color: #3c3031;
  	font-family: "a Asian Ninja";
 	margin-right: -22%;
-	margin-top: 15%;
+	margin-top: 18%;
 }
 
 .grid-wrapper {
@@ -150,6 +151,7 @@ background-position: center;
 	height: 100vh;
 	position: relative;
 	align-items: flex-start;
+	border: 2px #FFF0D2;
 }	
 	
 

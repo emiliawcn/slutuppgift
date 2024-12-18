@@ -10,7 +10,7 @@ scrollDownButton.addEventListener('click', function () {
     });
 });
 
-/*
+
 // Array of image URLs
 const images = [
   "http://31.media.tumblr.com/18b5f8f0a00ad01e50f7ae2f513be52d/tumblr_msqcl4iwM01soh1p8o1_500.png",
@@ -28,4 +28,3 @@ function changeImage(direction) {
 // Add event listeners to buttons
 document.getElementById("arrow-one").addEventListener("click", () => changeImage(-1)); // Left arrow
 document.getElementById("arrow-two").addEventListener("click", () => changeImage(1));  // Right arrow
-*/
