@@ -1,76 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>GridLayout</title>
-		<link href="mall.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-	<div class="grid-wrapper">
-		<div class="grid-obj obj1">
-	<h2 class="title-text">Genshin Impact</h2>
-			<div class="scrollDownButton1">
-			<button id="scrollDownButton" class="scroll-button">Download</button>
-		</div>
-	</div>
-		</div>
-		<div class="grid-obj obj2">
-        <div class="Textp2">
-            <h2 class="page2-text">Explore the <br> World of Teyvat</h2>
-        </div>
-        <div class="Furina-container">
-            <div class="Furina">
-                <div class="page2"
-<!-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GridLayout</title>
+        <link href="mall.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="grid-wrapper">
+      <div class="grid-obj obj1">
+                <h2 class="title-text">Genshin Impact</h2>
+                <div class="scrollDownButton1">
+                    <button id="scrollDownButton" class="scroll-button">
+                        Download
+                    </button>
+                </div>
+                <div class="firefly-container"></div>
+                <!-- Firefly container -->
+            </div>
+            <div class="grid-obj obj2">
+                <div class="Textp2">
+                    <h2 class="page2-text">
+                        Explore the <br />
+                        World of Teyvat
+                    </h2>
+                </div>
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="ganyu.png" style="width: 100%" />
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="alhaitham.png" style="width: 100%" />
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="furina_transparent.png" style="width: 100%" />
+                    </div>
+
+                    <!-- Arrow buttons for slideshow navigation -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- The dots/circles -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-            <!-- Arrow buttons for slideshow navigation -->
-            <div class="arrow-one" onclick="plusSlides(-1)">
-                <img src="pilar2.png" alt="arrow">
+
+            <div class="grid-obj obj3">
+                <h2 class="section-title">Download Genshin Impact</h2>
+                <div class="download-container">
+                    <div class="download-option right">
+                        <img src="windows.png" alt="Windows" />
+                        <a href="download/windows" class="download-button"
+                            >Download for Windows</a
+                        >
+                    </div>
+                    <div class="download-option left">
+                        <img src="ios.png" alt="iOS" />
+                        <a href="download/ios" class="download-button"
+                            >Download for iOS</a
+                        >
+                    </div>
+                    <div class="download-option right">
+                        <img src="android.png" alt="Android" />
+                        <a href="download/android" class="download-button"
+                            >Download for Android</a
+                        >
+                    </div>
+                </div>
             </div>
-            <div class="arrow-two" onclick="plusSlides(1)">
-                <img src="pilartwo.png" alt="arrow2">
+
+            <div class="grid-obj obj3a">
+                <h2 class="section-title">Explore the Regions</h2>
+                <div class="region-container">
+                    <div class="region">
+                        <img src="fontaine.png" alt="Region 1" />
+                        <p>
+Fontaine, the City of Justice, thrives on advanced technology and a rigorous legal system, powered by Hydro energy under the guidance of the Hydro Archon.
+
+</p>
+                    </div>
+                    <div class="region">
+                        <img src="inazuma.png" alt="Region 2" />
+                        <p>Inazuma, a land of thunder and tradition, is ruled by the Electro Archon and seeks to preserve eternity through unyielding ideals and innovation.</p>
+                    </div>
+                    <div class="region">
+                        <img src="natlan.png" alt="Region 3" />
+                        <p>Natlan is a fiery, passionate nation led by the Pyro Archon, where music, dance, and intense emotions fuel its vibrant culture.</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="grid-obj objfooter special">
+                <footer>
+                    <p>&copy; 2023 Genshin Impact. All rights reserved.</p>
+                </footer>
+            </div>
+
+            <div class="warning-sign"></div>
         </div>
-
-        <!-- Slideshow container (now inside obj2) -->
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="paimonn.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="furina_transparent.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="nilou.png" style="width:100%">
-            </div>
-
-            <!-- Remove dots (replaced by arrows) -->
-        </div>
-    </div>
-
-    <div class="grid-obj obj3"></div>
-    <div class="grid-obj obj3a"></div>
-    <div class="grid-obj obj3b"></div>
-    <div class="grid-obj obj3c"></div>
-    <div class="grid-obj objfooter">footer</div>
-    <div class="warning-sign"></div>
-    <div class="cloud-section">
-        <img src="molnhögerny.png" alt="Moln-Hoger" class="Moln-Right">
-    </div>
-    <div class="cloud-container">
-        <img src="moln_vänsteriiiigen.png" alt="Moln-Vanster" class="Moln-Left">
-    </div>
-
-
- 
-	
-		<script src="animation.js"></script>
-	</body>
+        <script src="animation.js"></script>
+    </body>
 </html>
-

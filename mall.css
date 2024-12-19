@@ -2,552 +2,511 @@
 
 /* font for GENSHIN IMPACT text */
 @font-face {
-	font-family: "a Asian Ninja";
-	src: url("aAsianNinja.ttf");
+    font-family: "a Asian Ninja";
+    src: url("aAsianNinja.ttf");
 }
 
 * {
-	margin: 0;
-	padding: 0;
-		
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-margin: 0;
-	width: 100%;
-	height: 100vh;
-	padding: 0;
-	overflow-x: hidden;
-	background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
 }
 
-
 .warning-sign {
-position: fixed;
-background-image: url("warning.png");
-background-repeat: no-repeat;
-bottom: 90%;
-right: 50px;
-width: 120px;;
-height: 100px;
-background-size: contain;
-z-index: 8;	
-	
+    position: fixed;
+    background-image: url("warning.png");
+    background-repeat: no-repeat;
+    bottom: 90%;
+    right: 50px;
+    width: 120px;
+    height: 100px;
+    background-size: contain;
+    z-index: 8;
 }
 
 .title-text {
-	display: flex;
- 	font-size: 600%;
-	margin-left: 30%;
-	margin-top: 5%;
- 	color: #3c3031;
- 	font-family: "a Asian Ninja";
-	align-items: flex-start;
+    display: flex;
+    font-size: 6rem;
+    color: #3c3031;
+    font-family: "a Asian Ninja";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .scroll-button {
-	display: flex;
-	width: 200%;
-	height: 5%;
-	margin-top: 150%;
-	margin-left: -370%;
-	justify-content: center;
-    font-size: 160%;
-	color: #3c3031;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #3c3031;
     background-color: #fff0d2;
-	font-family: "a Asian Ninja";
+    font-family: "a Asian Ninja";
     border: none;
     border-radius: 5%;
     cursor: pointer;
     z-index: 3;
+    margin: 20px auto; /* Center the button */
 }
- 
+
 .scroll-button:hover {
     background-color: #EBDDC4;
 }
 
 /* left */
 .cloud-section {
-	pointer-events: none;
-	justify-content: space-between;
-	position: fixed;
-	padding: 0;
-	margin: 0;
-	flex-wrap: wrap;
-	float: right;
-	top: 70%;
-	left: 70%;
-	z-index: 3;
-	width: 15%;
-	background-size: cover;
+    pointer-events: none;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    float: right;
+    top: 70%;
+    left: 70%;
+    z-index: 3;
+    width: 15%;
+    background-size: cover;
 }
 
 /* right */
 .cloud-container {
-	pointer-events: none;
-	justify-content: space-between;
-	position: fixed;
-	padding: 0;
-	margin: 0;
-	flex-wrap: wrap;
-	float: right;
-	top: 70%;
-	right: 100%;
-	z-index: 3;
-	width: 20%;
-	background-size: cover;
+    pointer-events: none;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    float: right;
+    top: 70%;
+    right: 100%;
+    z-index: 3;
+    width: 20%;
+    background-size: cover;
 }
 
 .Moln-Right {
-margin-top: 25%;
+    margin-top: 25%;
 }
 
 .Moln-Left {
-	margin-top: 25%;
-	
+    margin-top: 25%;
 }
 
+
 .grid-obj {
- padding: 0;
-margin: 0;
-	
+    padding: 0;
+    margin: 0;
+    width: 100%;
+	min-height: 100vh;
 }
+
+.grid-obj.special {
+    min-height: auto;
+}
+
 .page2-text {
- 	font-size: 500%;
- 	color: #3c3031;
- 	font-family: "a Asian Ninja";
-	margin-right: -22%;
-	margin-top: 5%;
+    font-size: 5rem;
+    color: #3c3031;
+    font-family: "a Asian Ninja";
+    margin-right: -22%;
+    margin-top: 5%;
 }
 
 .grid-wrapper {
-	display: grid;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .obj1 {
- grid-column: 1 / span 4;
-	grid-row: 1;
-	height: 100vh;
-	background-color: #fff;
-	background-image: url("genshin-impact-4k-background-21w0vqi2r74d6a9l.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position:center;
-	display: flex;
-	z-index: 2
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url("ayaka.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .obj2 {
- grid-column: 1 / span 4;
- grid-row: 2;
-background-color: #fff0d2;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-	padding: 0;
-	display: flex;
-	height: 100vh;
-	position: relative;
-	align-items: flex-start;
-	border: 2px #FFF0D2;
-}	
-	
-
-.arrow, .furina{
-	display: flex;
-}
-.arrow-one {
-	margin-left: 40%;
-	display: flex;
-	z-index: 6;
-	scale: 80%;
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    background-color: #fff0d2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    align-items: flex-start;
+    border: 2px #FFF0D2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .arrow-one, .arrow-two {
-	z-index: 10;
-	cursor: pointer;
-}
-	
-.arrow-two {
-	display: flex;
-	z-index: 6;
-	margin-top: -8%;
-	margin-left: -15%;
-	scale: 40%;
-	
+    position: absolute;
+    top: 50%;
+    width: 30px; /* Adjust the width to make the arrows smaller */
+    height: 30px; /* Adjust the height to make the arrows smaller */
+    z-index: 10;
+    cursor: pointer;
+    transform: translateY(-50%);
 }
 
-* {box-sizing:border-box}
+.arrow-one {
+    left: 10px; /* Position the left arrow */
+}
+
+.arrow-two {
+    right: 10px; /* Position the right arrow */
+}
 
 .slideshow-container {
-	max-width: 25%;
-    position: absolute; /* Make it appear inside obj2 */
-    top: 50%; /* Position it inside obj2 */
-    left: 30%;
-    transform: translate(-50%, -50%); /* Center the slideshow inside */
-    z-index: 20;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
 }
 
 .numbertext {
-	max-width: 5%;
-	z-index: 20;
+    max-width: 5%;
+    z-index: 20;
 }
 
 .numbertext2 {
-	max-width: 20%;
-	z-index: 20;
+    max-width: 20%;
+    z-index: 20;
 }
 
 .numbertext3 {
-	max-width: 25%;
-	z-index: 20;
-}
-.arrow-one, .arrow-two {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    z-index: 10;
-    cursor: pointer;
+    max-width: 25%;
+    z-index: 20;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
+.dots-container {
+    text-align: center;
+    padding: 20px;
+}
+
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
-
 .page2-text {
-	position:absolute;
-	align-content: center;
-	z-index: 5;
-	right: 25%;
-	top: 10%;
-	
+    position: absolute;
+    align-content: center;
+    z-index: 5;
+    right: 25%;
+    top: 10%;
 }
 
 .obj3 {
- grid-row: 3;
-background-image: url("Ganyu (Genshin Impact).png");
-background-size: cover;
-background-repeat: no-repeat;
+    grid-row: 3;
+    background-color: #fff0d2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	background-image: url("lumine.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
-	display: flex;
-	width: 100%;
 	height: 100vh;
-	overflow: hidden;
-	border: 1px solid red;
 }
 
-/* page one */
-.grid-wrapper-pageone {
- display: grid;
- grid-template-columns: auto auto auto 10%;
- background-color: #2196F3;
-	background-repeat: no-repeat;
+.download-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.grid-wrapper-pageone > div {
- background-color: rgba(255, 255, 255, 0.8);
- text-align: center;
- padding: 20px 0;
- font-size: 30px;
-	width: 100%;
-	height: 100vh;
-	background-repeat: no-repeat;
+.download-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.flex-wrapper-wrap > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+.download-option.right {
+    align-items: center; /* Center align */
 }
-/* page one*/
-.flex-wrapper-wrap-reverse {
- display: flex;
- flex-wrap: wrap-reverse;
- background-color: DodgerBlue;
+
+.download-option.left {
+    align-items: center; /* Center align */
 }
-.flex-wrapper-wrap-reverse > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+.download-option img {
+    width: 100px;
+    height: 100px; /* Ensure same size */
+    margin-bottom: 10px;
 }
-.flex-wrapper-flex-flow{
-display: flex;
- flex-flow: row wrap;
- background-color: DodgerBlue;
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3c3031;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
-.flex-wrapper-flex-flow > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+.download-button:hover {
+    background-color: #2a2021;
 }
-/* page two*/
-.flex-wrapper-justify{
- display: flex;
- justify-content: center;
-background-color: #0D1CAE;
+
+.obj3a, .obj3b, .obj3c {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+    background-color: #FFF0D2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.flex-wrapper-justify > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+.obj3a {
+    padding: 100px;
+    padding-bottom: 100px;
 }
-.flex-wrapper-justify-flex-start{
- display: flex;
- justify-content: flex-start;
-background-color: #0D1CAE;
+
+.objfooter {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+    background-color: #3c3031;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
-.flex-wrapper-justify-flex-start > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2a2021;
+    margin-bottom: 20px;
+    font-family: "a Asian Ninja";
+    src: url("aAsianNinja.ttf");
 }
-.flex-wrapper-justify-flex-end{
- display: flex;
- justify-content: flex-end;
-background-color: #0D1CAE;
+
+.character-container, .region-container, .community-container, .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-.flex-wrapper-justify-flex-end > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+.character, .region, .news-item {
+    width: 30%;
+    text-align: center;
 }
-.flex-wrapper-justify-space-around{
- display: flex;
- justify-content: space-around;
-background-color: #0D1CAE;
+
+.character img, .region img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
-.flex-wrapper-justify-space-around > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+.join-button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #3c3031;
+    font-family: "a Asian Ninja";
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    margin: 20px auto;
 }
-.flex-wrapper-justify-space-between{
- display: flex;
- justify-content: space-between;
-background-color: #0D1CAE;
+
+.join-button:hover {
+    background-color: #2a2021;
 }
-.flex-wrapper-justify-space-between > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+@media (max-width: 1448px) {
+    .page2-text {
+        display: none;
+    }
 }
-/* page three*/
-.flex-wrapper-align{
- display: flex;
-height: 200px;
- align-items: center;
- background-color: #0D1CAE;
-}
-.flex-wrapper-align > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
-}
-.flex-wrapper-align-top{
- display: flex;
-height: 200px;
- align-items: flex-start;
- background-color: #0D1CAE;
-}
-.flex-wrapper-align-top > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
-}
-.flex-wrapper-align-bottom{
- display: flex;
-height: 200px;
- align-items: flex-end;
- background-color: #0D1CAE;
-}
-.flex-wrapper-align-bottom > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
-}
-.flex-wrapper-align-baseline{
- display: flex;
-height: 200px;
- align-items: baseline;
- background-color: #0D1CAE;
-}
-.flex-wrapper-align-baseline > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
-}
-/*page four*/
-.flex-wrapper-space-between {
- display: flex;
- height: 600px;
- flex-wrap: wrap;
- align-content: space-between;
-background-color: #0D1CAE;
-}
-.flex-wrapper-space-between > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
-}
-.flex-wrapper-stretch {
- display: flex;
- height: 600px;
- flex-wrap: wrap;
- align-content: stretch;
-background-color: #0D1CAE;
-}
-.flex-wrapper-stretch > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
-}
-.flex-wrapper-align-contenet {
- display: flex;
- height: 600px;
- flex-wrap: wrap;
- align-content: center;
-background-color: #0D1CAE;
-}
-.flex-wrapper-align-content > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
-}
-.flex-wrapper-perfect-center {
- display: flex;
- height: 300px;
- justify-content: center;
- align-items: center;
-background-color: #0D1CAE;
-}
-.flex-wrapper-perfect-center > div {
- background-color: #f1f1f1;
- width: 100px;
- margin: 10px;
- text-align: center;
- line-height: 75px;
- font-size: 30px;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 4rem;
+    }
+
+    .cloud-container, .cloud-section {
+        display: none;
+    }
+
+    .scroll-button {
+        width: 150px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .page2-text {
+        font-size: 3rem;
+        margin-right: 0;
+        right: 10%;
+    }
+
+    .slideshow-container {
+        max-width: 90%;
+    }
+
+
+    .arrow-one, .arrow-two {
+        width: 20px; /* Adjust the width for smaller screens */
+        height: 20px; /* Adjust the height for smaller screens */
+    }
+
+    .character, .region, .news-item {
+        width: 100%;
+    }
+
+    .download-option.right, .download-option.left {
+        align-items: center;
+    }
 }
 
 
+.firefly-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
 
+.firefly {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(100vw, 100vh);
+        opacity: 0;
+    }
+}
