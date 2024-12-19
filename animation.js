@@ -55,3 +55,33 @@ document.addEventListener("DOMContentLoaded", function () {
         fireflyContainer.appendChild(firefly);
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    document.querySelectorAll(".animate-on-scroll").forEach((element) => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    document.querySelectorAll(".animate-on-scroll").forEach((element) => {
+        observer.observe(element);
+    });
+});

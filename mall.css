@@ -307,13 +307,30 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	background-image: url("lumine.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100vh;
+    background-image: url("lumine.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    min-height: 100vh;
+    animation: moveBg 5s infinite ease-in-out;
 }
 
+@keyframes moveBg {
+    0%, 100% {
+        background-position: center center;
+    }
+    50% {
+        background-position: calc(50% + 20px) center;
+    }
+}
+
+@media (max-width: 768px) {
+    .obj3 {
+        animation: none;
+        background-size: cover;
+    }
+}
 .download-container {
     display: flex;
     flex-wrap: wrap;
@@ -326,20 +343,46 @@ html, body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
-.download-option.right {
-    align-items: center; /* Center align */
+.download-option:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
 
+.download-option.right,
 .download-option.left {
     align-items: center; /* Center align */
 }
+
 
 .download-option img {
     width: 100px;
     height: 100px; /* Ensure same size */
     margin-bottom: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+}
+
+.animate-visible {
+    animation: fadeInUp 1s forwards;
+}
+
+.animate-visible.special {
+    animation: fadeInUp 2s forwards !important;
 }
 
 .download-button {
@@ -407,6 +450,19 @@ html, body {
     height: auto;
     border-radius: 10px;
 }
+
+.region img {
+    transition: transform 0.3s ease;
+}
+
+.region img:hover {
+    transform: scale(1.1);
+}
+
+.region p {
+    padding-top: 30px;
+  }
+
 
 .join-button {
     display: flex;
