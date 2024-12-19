@@ -117,7 +117,7 @@ margin: 0;
  	color: #3c3031;
  	font-family: "a Asian Ninja";
 	margin-right: -22%;
-	margin-top: 18%;
+	margin-top: 5%;
 }
 
 .grid-wrapper {
@@ -153,57 +153,60 @@ background-position: center;
 }	
 	
 
-.Furina {
-	display: block;
-	z-index: 6;
-}
-
-
-.Furina-container{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	margin-top: 10%;
-	z-index: 6;
-}
-
-
 .arrow, .furina{
 	display: flex;
 }
 .arrow-one {
-	margin-left: 60%;
+	margin-left: 40%;
+	display: flex;
+	z-index: 6;
+	scale: 80%;
 }
 
 .arrow-one, .arrow-two {
 	z-index: 10;
 	cursor: pointer;
 }
-.arrow {
-	display: flex;
-	z-index: 6;
-	width: 20%;
-	/*
-	background-color:blueviolet;
-	*/
-}
 	
 .arrow-two {
-	margin-left: -5%;
-	width: 20%;
 	display: flex;
-	margin-top: -35%;
-	scale: 50%;
+	z-index: 6;
+	margin-top: -8%;
+	margin-left: -15%;
+	scale: 40%;
 	
 }
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+	max-width: 25%;
+    position: absolute; /* Make it appear inside obj2 */
+    top: 50%; /* Position it inside obj2 */
+    left: 30%;
+    transform: translate(-50%, -50%); /* Center the slideshow inside */
+    z-index: 20;
+}
+
+.numbertext {
+	max-width: 5%;
+	z-index: 20;
+}
+
+.numbertext2 {
+	max-width: 20%;
+	z-index: 20;
+}
+
+.numbertext3 {
+	max-width: 25%;
+	z-index: 20;
+}
+.arrow-one, .arrow-two {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    z-index: 10;
+    cursor: pointer;
 }
 
 /* Hide the images by default */
